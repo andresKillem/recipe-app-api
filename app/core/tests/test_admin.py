@@ -8,7 +8,7 @@ class AdminSiteTests(TestCase):
     #SetUp function is a function that runs before every test that run
     def setUp(self) -> None:
         self.client = Client()
-        self.admin_user = get_user_model().objects.create_super_user(
+        self.admin_user = get_user_model().objects.create_superuser(
             email = "andreco87@hotmail.com",
             password = "Asdqwe123."
         )
